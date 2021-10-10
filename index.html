@@ -1,61 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Flex box and images in it</title>
-        <style >
-            body{
-                padding: 0;
-                margin: 0;
-            }
-             .flex-container h1{
-                text-align: center;
-                font-size: 30px;
-                font-family: sans-serif;
-                background-color:#c5c5db;
-                border: 3px solid purple;
-                margin:25px 19px;
-                padding: 10px 19px;
-             }
-            .images-area{
-                
-                display: flex;
-               flex-wrap: wrap;
-              height: 100%;
-               align-content: flex-start;
-               justify-items: center;
-               background: lightgrey;
-            }
-           .images-area>div{
-            max-width: 400px;
-               margin: auto;
-           }
-           img{
-                padding: 10px;
-                margin: 10px;
-                width: 100%;
-                height: 300px;
-                border: 4px solid black;
-                background: lightyellow;
+<html lang="en" dir="ltr">
 
-            }
-            img:hover{
-                opacity: .5;
-                transition: .8s;
-            }
-        </style>
-    </head>
-    <body>
-        <div  class="flex-container">
-            <h1> Image Gallery</h1>
-             <div  class="images-area">
-                   <div><img src="image_1.jpg" alt=""></div>             
-                  <div><img src="image_2.jpg" alt=""></div>                
-                    <div><img src="image_3.jpg" alt=""></div>               
-                  <div><img src="image_4.jpg" alt=""></div>               
-                  <div><img src="image_5.jpg" alt=""></div>               
-                 <div><img src="image_6.jpg" alt=""></div>
-             </div>
-             </div>
-         </div>
-     </body>
-    </html>
+<head>
+  <meta charset="utf-8">
+  <title>Flex images</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .container div {
+      border: 10px #333 solid;
+      padding: 10px 600px;
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      font-size: 40px;
+      background-color: grey;
+      color: #fff
+    }
+
+    .image1 {
+      flex: 1;
+    }
+
+    .image2 {
+      flex: 1;
+    }
+
+    .image3 {
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      font-size: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Images of my favourite Cars</h1>
+    <div class="image1"><img src="image1.jpg" alt="Bugatti veyron">
+      <h3>Bugatti veyron</h3>
+    </div>
+    <div class="image2"><img src="image2.jpg" alt="Mercedes w223S">
+      <h3>Mercedes W223S</h3>
+    </div>
+    <div class="image3"><img src="image3.jpg" alt="Mercedes Benz">
+      <h3>Mercedes Benz</h3>
+    </div>
+  </div>
+</body>
+
+</html>
+
