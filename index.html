@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex box and images in it</title>
+        <style >
+            body{
+                padding: 0;
+                margin: 0;
+            }
+             .flex-container h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: sans-serif;
+                background-color:#c5c5db;
+                border: 3px solid purple;
+                margin:25px 19px;
+                padding: 10px 19px;
+             }
+            .images-area{
+                
+                display: flex;
+               flex-wrap: wrap;
+              height: 100%;
+               align-content: flex-start;
+               justify-items: center;
+               background: lightgrey;
+            }
+           .images-area>div{
+            max-width: 400px;
+               margin: auto;
+           }
+           img{
+                padding: 10px;
+                margin: 10px;
+                width: 100%;
+                height: 300px;
+                border: 4px solid black;
+                background: lightyellow;
+
+            }
+            img:hover{
+                opacity: .5;
+                transition: .8s;
+            }
+        </style>
+    </head>
+    <body>
+        <div  class="flex-container">
+            <h1> Image Gallery</h1>
+             <div  class="images-area">
+                   <div><img src="image_1.jpg" alt=""></div>             
+                  <div><img src="image_2.jpg" alt=""></div>                
+                    <div><img src="image_3.jpg" alt=""></div>               
+                  <div><img src="image_4.jpg" alt=""></div>               
+                  <div><img src="image_5.jpg" alt=""></div>               
+                 <div><img src="image_6.jpg" alt=""></div>
+             </div>
+             </div>
+         </div>
+     </body>
+    </html>
